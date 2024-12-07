@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍕 Build Your Perfect Pizza 🍕</h1>
+        
+        <div class="pizza-builder">
+            <div class="pizza-preview">
+                <div class="pizza-base">
+                    <!-- Toppings will be added here dynamically -->
+                </div>
+            </div>
+            
+            <div class="toppings-selector">
+                <h2>Choose Your Toppings</h2>
+                <div class="toppings-grid">
+                    <div class="topping" draggable="true" data-topping="pepperoni">🍖 Pepperoni</div>
+                    <div class="topping" draggable="true" data-topping="mushrooms">🍄 Mushrooms</div>
+                    <div class="topping" draggable="true" data-topping="olives">⚫ Olives</div>
+                    <div class="topping" draggable="true" data-topping="pepper">🫑 Pepper</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="price-calculator">
+            <h2>Your Pizza Summary</h2>
+            <p>Base Price: $10.00</p>
+            <p>Toppings: <span id="toppings-count">0</span> ($1.00 each)</p>
+            <p class="total">Total: $<span id="total-price">10.00</span></p>
+            <button id="save-pizza">Save as Favorite</button>
+        </div>
+
+        <div class="favorites">
+            <h2>Ben's Favorite Combinations</h2>
+            <div class="favorite-pizzas">
+                <div class="favorite-pizza">
+                    <h3>The Classic</h3>
+                    <p>Pepperoni, Mushrooms, Olives</p>
+                </div>
+                <!-- More favorites can be added here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
